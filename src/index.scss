@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import './styles/_colors.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans CKR', sans-serif;
+  background-color: $backColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

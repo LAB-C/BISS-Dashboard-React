@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Blockchain-based IoT Security Service
+========
 
-## Available Scripts
+`Blockchain based IoT Security Service(BISS)` by LAB-C made in 2018 Jeju Blockchain Hackathon.
 
-In the project directory, you can run:
+LAB-C팀이 2018 제주블록체인해커톤에서 만든 `Blockchain-based IoT Security Service(BISS)`입니다.
 
-### `npm start`
+--------
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Background
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+요즘 신축된 아파트는 기본적으로 “스마트 홈”이라는 이름을 가진 다양한 IoT 장치들을 설치하고 있습니다. 그런데 과연, 스마트 홈 IoT는 안전할까요?
 
-### `npm test`
+요즘 매일같이 홈 IoT나 CCTV등 다양한 IoT 기기들의 취약점이 발표됩니다. 유명한 사례로써는 미라이라는 이름의 IoT 장치의 취약점을 이용하여, DDos 공격을 진행한 미라이 봇넷 사건도 있습니다.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+그렇듯 IoT 환경의 보안은 날로 갈수록 중요해지고 있지만, 하지만 다양한 IoT 서비스들의 보안은 참담한 수준입니다.
 
-### `npm run build`
+그래서 저희는 블록체인을 통한 데이터 검증을 진행해서 IoT 펌웨어 검증 솔루션 에서의 펌웨어 관리도 블록체인을 통해 검증하고, IoT 장치가 각각의 노드가되어, 모든 데이터가 암호화되어 블록체인(클레이튼 네트워크) 상에 올라가는 형태의 IoT 보안 솔루션을 기획하게 되었습니다.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Goal
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+1. IoT 기기와 사용자간의 통신보안성 확립
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. IoT 펌웨어 검증 솔루션 개발
 
-### `npm run eject`
+3. 블록체인을 통해 서버와 디바이스 간의 통신에서 데이터 무결성을 검증할 수 있는 IoT 통합 보안 솔루션을 개발
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> 데이터 통신과 펌웨어 업데이트 통신에서 무결성, 보안성 ⬆️
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Directional
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 블록체인: `Klaytn`
+- 웹 프론트엔드: `React.js`
+- 웹 백엔드: `Express.js`
+- 펌웨어 업로드 서버: `Flask`
+- IoT 기기: 아두이노 + 라즈베리파이(`Python3`)

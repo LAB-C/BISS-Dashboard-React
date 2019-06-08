@@ -1,0 +1,28 @@
+.Main{
+    margin: 8% 10%;
+
+    & > h1{
+        font-size: 16pt;
+
+        & > span{
+            font-size: 14pt;
+            font-weight: 400;
+        }
+    }
+
+    & > div{
+        & > div{
+            display: flex;
+            margin-top: 30px;    
+            width: 100%;
+
+            & > div{
+                background-color: #fff;
+            }
+
+            &:not(:first-child){
+                margin-left: 30px;
+            }
+        }
+    }
+}

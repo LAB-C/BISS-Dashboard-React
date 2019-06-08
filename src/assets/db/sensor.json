@@ -1,0 +1,20 @@
+[
+    {
+        "label": "PM2008 Cubic",
+        "borderColor": "#66a6ff",
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "data": [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+        "label": "DHT-11",
+        "borderColor": "#89F7FE",
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "data": [76, 40, 30, 70, 25, 38, 90]
+    },
+    {
+        "label": "Temperature Sensor",
+        "borderColor": "#ff9328",
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "data": [37, 80, 25, 38, 10, 60, 8]
+    }
+]

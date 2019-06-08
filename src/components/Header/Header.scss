@@ -1,0 +1,105 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/breakpoints.scss';
+
+#Header, .Header{
+    position: fixed !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+    height: 80px;
+    background-color: #fff;
+    color: $headerColor;
+    width: calc(100% - 120px);
+    box-shadow: 0px 10px 25px -25px #010101;
+
+    @media(max-width: $small) {
+      padding: 24px;
+      width: calc(100% - 48px);
+    }
+
+    & > ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+  
+      & > li{
+        &:nth-child(1){
+          align-self: center;
+          flex-grow: 1;
+          box-sizing: border-box;
+          width: auto;
+          min-width: 0;
+          flex-basis: 0;
+          padding: 0!important;
+          display: flex;
+          justify-content: space-between;
+  
+          & > a{
+            display: inline-block;
+            line-height: 0;
+            vertical-align: bottom;
+  
+            & > img{
+              @media(min-width: $small) {
+                width: 126px;
+                height: 30px;
+              }
+
+              @media(max-width: $small) {
+                width: 70px;
+                height: 15px;
+              }
+            }
+          }
+        }
+  
+        &:nth-child(2){
+          align-self: center;
+          padding: 0;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: auto;
+          width: initial;
+          min-width: 0;
+  
+          & > div{
+            display: flex;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            flex-wrap: nowrap;
+  
+            & > div{
+              &:nth-child(1){
+                background-image: url('../../assets/images/profile.png');
+                background-position: center center;
+                background-size: 50px;
+                width: 30px;
+                height: 30px;
+                border-radius: 25px;
+              }
+
+              &:nth-child(2){
+                margin-left: 20px;
+                
+                & > div{
+                  font-size: 10pt;
+                  & > span{
+                    font-weight: 500;
+                    font-size: 13pt;
+                    margin-right: 3px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
