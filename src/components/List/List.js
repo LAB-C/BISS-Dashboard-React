@@ -17,7 +17,11 @@ export default class Header extends Component {
                 <ul>
                     {this.props.item.map((items, i) => (
                         <li key={i}>
-                            {items}
+                            <img src={this.props.path} alt="" />
+                            <div>
+                                <span>{items[1]}</span>
+                                {items[0].substr(1, 30)}...
+                            </div>
                         </li>
                     ))}
                 </ul>

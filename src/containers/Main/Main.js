@@ -9,6 +9,11 @@ import sensor from '../../assets/db/sensor.json'
 import node from '../../assets/db/node.json'
 import hash from '../../assets/db/hash.json'
 
+import ic_android from '../../assets/images/ic_android.png'
+import ic_arduino from '../../assets/images/ic_arduino.png'
+import ic_blockchain from '../../assets/images/ic_blockchain.png'
+import ic_transaction from '../../assets/images/ic_transaction.png'
+
 import styles from './Main.scss';
 
 const cx = classNames.bind(styles)
@@ -24,18 +29,18 @@ class App extends Component {
               <Graph/>
             </div>
             <div>
-              <List item={sensor} user="고태건" header="님의 센서 목록"/>
+              <List item={sensor} user="고태건" header="님의 센서 목록" path={ic_arduino}/>
             </div>
           </div>
           <div>
             <div>
-              <List item={device} user="고태건" header="님의 디바이스 목록"/>
+              <List item={device} user="고태건" header="님의 디바이스 목록" path={ic_android}/>
             </div>
             <div>
-              <List item={node} user="고태건" header="님의 노드 목록"/>
+              <List item={node} user="고태건" header="님의 노드 목록" path={ic_blockchain} />
             </div>
             <div>
-              <List item={hash} user="A" header='장치의 트렌젝션' />
+              <List item={hash} user="A" header='장치의 트렌젝션' path={ic_transaction}/>
             </div>
           </div>
         </div>

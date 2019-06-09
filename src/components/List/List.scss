@@ -1,5 +1,6 @@
 .List{
     width: calc(26vw - 80px);
+    height: 290px;
     padding: 20px 30px 10px 30px;
 
     & > h2{
@@ -8,6 +9,34 @@
 
         & > span{
             font-weight: 800;
+        }
+    }
+
+    & > ul{
+        padding: 0;
+        list-style-type: none;
+
+        & > li{
+            display: flex;
+            flex-direction: row;
+            font-size: 10pt;
+
+            &:not(:first-child){
+                margin-top: 10px;
+            }
+
+            & > div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+
+                & > span{
+                    font-size: 12pt;
+                    display: flex;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }

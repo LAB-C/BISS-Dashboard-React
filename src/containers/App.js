@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 
 import * as classNames from 'classnames/bind'
-
 import Header from '../components/Header/Header'
 import Main from './Main/Main'
 import Login from './Login/Login'

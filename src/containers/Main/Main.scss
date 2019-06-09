@@ -1,8 +1,10 @@
 .Main{
-    margin: 8% 0;
+    padding-top: 80px;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     & > h1{
         width: 78vw;
