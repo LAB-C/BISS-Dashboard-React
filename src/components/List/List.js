@@ -2,21 +2,17 @@ import React, { Component } from 'react'
 import './List.scss'
 
 export default class Header extends Component {
-    // constructor(props) {
-    //     super(props)
-
-    //     this.setState({
-    //         item: this.props.item
-    //     })
-    // }
-    
     render() {
+        console.log(this.props.item)
         return (
-            <div>
-                <h2>{this.props.header}</h2>
+            <div className="List">
+                <h2>
+                    <span>{this.props.user}</span>
+                    {this.props.header}
+                </h2>
                 <ul>
-                    {this.props.item.map((items) => (
-                        <li>
+                    {this.props.item.map((items, i) => (
+                        <li key={i}>
                             {items}
                         </li>
                     ))}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Line } from 'react-chartjs-2';
 
-import data from '../../assets/db/sensor.json'
+import data from '../../assets/db/graph.json'
 import './Graph.scss';
 
 const options = {
@@ -51,8 +51,8 @@ class Graph extends Component {
                 <Line
                     data={this.state.data}
                     options={options}
-                    width="780"
-                    height="250"
+                    width={780}
+                    height={250}
                 />
             </div>
         );

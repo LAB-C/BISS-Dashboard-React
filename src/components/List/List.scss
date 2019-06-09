@@ -1,0 +1,13 @@
+.List{
+    width: calc(26vw - 80px);
+    padding: 20px 30px 10px 30px;
+
+    & > h2{
+        font-size: 11pt;
+        font-weight: 400;
+
+        & > span{
+            font-weight: 800;
+        }
+    }
+}
