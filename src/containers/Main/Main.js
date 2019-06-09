@@ -24,18 +24,18 @@ class App extends Component {
               <Graph/>
             </div>
             <div>
-              {/* <List item={sensor}/> */}
+              <List item={sensor} user="고태건" header="님의 센서 목록"/>
             </div>
           </div>
           <div>
             <div>
-              <List item={device} header="고태건님의 디바이스 목록"/>
+              <List item={device} user="고태건" header="님의 디바이스 목록"/>
             </div>
             <div>
-              <List item={node} header="고태건님의 노드 목록"/>
+              <List item={node} user="고태건" header="님의 노드 목록"/>
             </div>
             <div>
-              <List item={hash} header='"A" 장치의 트렌젝션' />
+              <List item={hash} user="A" header='장치의 트렌젝션' />
             </div>
           </div>
         </div>
