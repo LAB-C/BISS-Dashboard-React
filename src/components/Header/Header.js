@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
-import './Header.scss'
+import * as classNames from 'classnames/bind'
+
+import styles from './Header.scss';
 
 import logo from '../../assets/images/ic-logo.svg'
 import profile from '../../assets/images/profile.png'
 
+const cx = classNames.bind(styles)
+
 export default class Header extends Component {
   render () {
     return (
-      <nav id='Header'>
+      <nav id={cx("Header")}>
         <ul>
           <li>
             <a href='/'>
