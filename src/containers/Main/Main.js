@@ -29,18 +29,18 @@ class App extends Component {
               <Graph/>
             </div>
             <div>
-              <List item={sensor} user="고태건" header="님의 센서 목록" path={ic_arduino}/>
+              <List item={sensor} user="고태건" header="님의 센서 목록" img={ic_arduino} type="sensor" />
             </div>
           </div>
           <div>
             <div>
-              <List item={device} user="고태건" header="님의 디바이스 목록" path={ic_android}/>
+              <List item={device} user="고태건" header="님의 디바이스 목록" img={ic_android} type="device" />
             </div>
             <div>
-              <List item={node} user="고태건" header="님의 노드 목록" path={ic_blockchain} />
+              <List item={node} user="고태건" header="님의 노드 목록" img={ic_blockchain} type="node" />
             </div>
             <div>
-              <List item={hash} user="A" header='장치의 트렌젝션' path={ic_transaction}/>
+              <List item={hash} user="A" header='장치의 트렌젝션' img={ic_transaction} type="tran" />
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import * as classNames from 'classnames/bind'
 
@@ -16,13 +17,13 @@ export default class Header extends Component {
                 </h2>
                 <ul>
                     {this.props.item.map((items, i) => (
-                        <li key={i}>
-                            <img src={this.props.path} alt="" />
+                        <Link key={i} to={`${this.props.type}=${items[1]}`}>
+                            <img src={this.props.img} alt="" />
                             <div>
                                 <span>{items[1]}</span>
                                 {items[0].substr(1, 30)}...
                             </div>
-                        </li>
+                        </Link>
                     ))}
                 </ul>
             </div>

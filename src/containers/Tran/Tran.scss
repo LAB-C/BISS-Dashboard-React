@@ -1,0 +1,18 @@
+.Transaction{
+    padding-top: 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > h1{
+        width: 78vw;
+        font-size: 16pt;
+
+        & > span{
+            font-size: 14pt;
+            font-weight: 400;
+        }
+    }
+}
