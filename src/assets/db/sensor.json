@@ -1,5 +1,14 @@
 [
-    ["0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "PM2008 Cubic"],
-    ["0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "DHT-22"],
-    ["0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c", "Temperature Sensor"]
+    {
+        "name": "PM2008 Cubic",
+        "info": "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c"
+    },
+    {
+        "name": "DHT-22",
+        "info": "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c"
+    },
+    {
+        "name": "Temperature Sensor",
+        "info": "0xad11e08d123d7b2fd22c0968283981154f32c110aadbb6ff43525138b23ee88c"
+    }
 ]

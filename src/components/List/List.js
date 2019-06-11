@@ -20,8 +20,8 @@ export default class Header extends Component {
                         <Link key={i} to={`${this.props.type}=${i}`}>
                             <img src={this.props.img} alt="" />
                             <div>
-                                <span>{items[1]}</span>
-                                {items[0].substr(1, 30)}...
+                                <span>{items.name}</span>
+                                {items.info.substr(1, 30)}...
                             </div>
                         </Link>
                     ))}
