@@ -1,10 +1,8 @@
 .Sensor{
-    padding-top: 80px;
-    height: calc(100vh - 80px);
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     & > h1{
         width: 78vw;
@@ -13,6 +11,34 @@
         & > span{
             font-size: 14pt;
             font-weight: 400;
+        }
+    }
+
+    & > div{
+        width: calc(78vw - 60px);
+        margin-top: 30px;
+        height: auto !important;
+        background-color: #fff;
+        padding: 20px 30px 10px 30px;
+
+        & > table{
+            width: 100%;
+            border-spacing: 0px 10px;
+            & > thead{
+                & > tr{
+                    & > th{
+                        width: 30%;
+                    }
+                }
+            }
+            & > tbody{
+                & > tr{
+                    & > td{
+                        width: 30%;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }

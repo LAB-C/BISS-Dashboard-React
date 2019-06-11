@@ -17,7 +17,7 @@ export default class Header extends Component {
                 </h2>
                 <ul>
                     {this.props.item.map((items, i) => (
-                        <Link key={i} to={`${this.props.type}=${items[1]}`}>
+                        <Link key={i} to={`${this.props.type}=${i}`}>
                             <img src={this.props.img} alt="" />
                             <div>
                                 <span>{items[1]}</span>

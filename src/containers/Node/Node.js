@@ -11,7 +11,7 @@ class Node extends Component {
         const { id } = this.props.match.params; 
         return (
             <div className={cx('Node')}>
-                <h1>디바이스 <span>{id}</span></h1>
+                <h1>노드 <span>{}</span></h1>
             </div>
         );
     }

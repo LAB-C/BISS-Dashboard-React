@@ -4,6 +4,8 @@ import * as classNames from 'classnames/bind'
 
 import styles from './Tran.scss';
 
+import Graph from '../../components/Graph/Graph'
+
 const cx = classNames.bind(styles)
 
 class Transaction extends Component {
@@ -12,6 +14,9 @@ class Transaction extends Component {
         return (
             <div className={cx('Transaction')}>
                 <h1>트랜젝션 <span>{id}</span></h1>
+                <div>
+                <Graph />
+                </div>
             </div>
         );
     }
