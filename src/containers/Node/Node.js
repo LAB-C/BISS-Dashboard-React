@@ -3,25 +3,51 @@ import { withRouter } from 'react-router-dom'
 import * as classNames from 'classnames/bind'
 
 import styles from './Node.scss';
-
 import data from '../../assets/db/node.json'
 import img from '../../assets/images/node0.jpg'
+
+import Modals from '../../components/Modal/Modal'
 
 const cx = classNames.bind(styles)
 
 class Node extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false,
+            modalInfo: 0
+        };
+        
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+    }
+  
+    handleOpenModal(i) {
+        this.setState({
+            showModal: true,
+            modalInfo: i
+        });
+    }
+    
     render() {
         const { id } = this.props.match.params; 
+        const { showModal, modalInfo } = this.state;
         return (
             <div className={cx('Node')}>
-                <h1>노드 <span>{data[id].name}</span></h1>
+                <Modals data={data} id={id} showModal={showModal} modalInfo={modalInfo} />
+                <h1>Node <span>{data[id].name}</span></h1>
         
                 <div>
                     <div style={{ 'backgroundImage': `url(${img})` }} />
                     <div>
-                        <span>Device :</span> {data[id].name} <br/>
-                        <span>Hash :</span> {data[id].info} <br />
-                        <span>Last Transaction : </span> {data[id].transaction[0][0]}
+                        <div>
+                            <span>Device :</span> {data[id].name}
+                        </div>
+                        <div>
+                            <span>Hash :</span> {data[id].info}
+                        </div>
+                        <div>
+                            <span>Last Transaction : </span> {data[id].transaction[0][0]}
+                        </div>
                     </div>
                 </div>
         
@@ -36,11 +62,11 @@ class Node extends Component {
                         </thead>
                         <tbody>
                             {data[id].transaction.map((item, i) => (
-                            <tr>
-                                <td>{item[0]}</td>
-                                <td>{item[1]}</td>
-                                <td>{item[2]}</td>
-                            </tr>
+                                <tr onClick={() => this.handleOpenModal(i)} key={i}>
+                                    <td>{item[0]}</td>
+                                    <td>{item[1]}</td>
+                                    <td>{item[2]}</td>
+                                </tr>
                             ))}
                         </tbody>
                     </table>

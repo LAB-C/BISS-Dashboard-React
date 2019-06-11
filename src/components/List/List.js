@@ -9,6 +9,7 @@ const cx = classNames.bind(styles)
 export default class Header extends Component {
     render() {
         console.log(this.props.item)
+
         return (
             <div className={cx("List")}>
                 <h2>
@@ -17,7 +18,7 @@ export default class Header extends Component {
                 </h2>
                 <ul>
                     {this.props.item.map((items, i) => (
-                        <Link key={i} to={`${this.props.type}=${i}`}>
+                        <Link key={i} to={`${this.props.type}=${i}`} >
                             <img src={this.props.img} alt="" />
                             <div>
                                 <span>{items.name}</span>
