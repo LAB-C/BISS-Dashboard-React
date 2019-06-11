@@ -31,6 +31,7 @@ class Node extends Component {
     render() {
         const { id } = this.props.match.params; 
         const { showModal, modalInfo } = this.state;
+        
         return (
             <div className={cx('Node')}>
                 <Modals data={data} id={id} showModal={showModal} modalInfo={modalInfo} />

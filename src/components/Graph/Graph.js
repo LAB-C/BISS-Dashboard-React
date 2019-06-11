@@ -40,12 +40,12 @@ class Graph extends Component {
         }
     }
     render() {
-        console.log(this.state.data)
+        const { data } = this.state;
         return(
             <div className="Graph">
                 <h2><span>센서 그래프</span> Sensor Graph</h2>
                 <Line
-                    data={this.state.data}
+                    data={data}
                     options={options}
                     width={780}
                     height={250}

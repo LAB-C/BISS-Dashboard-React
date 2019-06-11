@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import Modal from 'react-modal';
+import Modal from 'react-modal'
 
 import * as classNames from 'classnames/bind'
 
-import styles from './Modal.scss';
+import styles from './Modal.scss'
+import ic_x from '../../assets/images/ic_x.png'
+    
 const cx = classNames.bind(styles)
  
 const customStyles = {
@@ -49,14 +51,27 @@ export default class Modals extends Component {
         const { modalInfo } = this.state;
         
         return (
-            <Modal isOpen={this.state.showModal} style={customStyles}>
+            <Modal isOpen={this.state.showModal} style={customStyles} ariaHideApp={false}>
                 <div className={cx('Modal')}>
                     <div>
                         <div />
-                        <button onClick={this.handleCloseModal} >X</button>
+                        <button onClick={this.handleCloseModal} >
+                            <img src={ic_x} alt="X"/>
+                        </button>
                     </div>
-                    <h1>트랜젝션 정보</h1>
-                    TX HASH: {data[id].transaction[modalInfo][0]}
+                    <div>
+                        <h1>트랜젝션 정보</h1>
+                        <div/>
+                    </div>
+                    <p>
+                        <span>TX HASH :</span> {data[id].transaction[modalInfo][0]}
+                    </p>
+                    <p>
+                        <span>Hash :</span> {data[id].info}
+                    </p>
+                    <p>
+                        <span>Last Transaction : </span> {data[id].transaction[0][0]}
+                    </p>
                 </div>
             </Modal>
         )

@@ -8,18 +8,17 @@ const cx = classNames.bind(styles)
 
 export default class Header extends Component {
     render() {
-        console.log(this.props.item)
+        const { user, type, img, header } = this.props;
 
         return (
             <div className={cx("List")}>
                 <h2>
-                    <span>{this.props.user}</span>
-                    {this.props.header}
+                    <span>{user}</span> {header}
                 </h2>
                 <ul>
                     {this.props.item.map((items, i) => (
-                        <Link key={i} to={`${this.props.type}=${i}`} >
-                            <img src={this.props.img} alt="" />
+                        <Link key={i} to={`${type}=${i}`} >
+                            <img src={img} alt="" />
                             <div>
                                 <span>{items.name}</span>
                                 {items.info.substr(1, 30)}...

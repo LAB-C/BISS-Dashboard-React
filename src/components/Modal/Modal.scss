@@ -7,20 +7,25 @@
     & > div{
         display: flex;
         width: 100%;
-        &:nth-child(1){
-            flex-direction: row;
-            justify-content: space-between;
-
-            & > button{
-                background: rgba(255, 255, 255, 0.5);
-                border: 0px;
-                
-            }
-        }
+        flex-direction: row;
+        justify-content: space-between;
 
         &:not(:first-child){
             padding-top: 150px;
         }
 
+        & > button{
+            background: rgba(255, 255, 255, 0.5);
+            border: 0px;
+        }
+    }
+ 
+    & > p{
+        width: calc(100% - 100px);
+        padding-left: 100px;
+        
+        & > span{
+            font-weight: 700;
+        }
     }
 }
