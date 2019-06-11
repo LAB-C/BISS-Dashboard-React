@@ -35,7 +35,7 @@ class Device extends Component {
     return (
         <div className={cx('Device')}>
           <Modals data={data} id={id} showModal={showModal} modalInfo={modalInfo} />
-          <h1>디바이스 <span>{data[id].name}</span></h1>
+          <h1>Device <span>{data[id].name}</span></h1>
         
           <div>
             <div style={{ 'backgroundImage': `url(${img})` }} />

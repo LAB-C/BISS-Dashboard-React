@@ -60,7 +60,7 @@ export default class Modals extends Component {
                         </button>
                     </div>
                     <div>
-                        <h1>트랜젝션 정보</h1>
+                        <h1>Transaction Info</h1>
                         <div/>
                     </div>
                     <p>
