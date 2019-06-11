@@ -16,10 +16,12 @@
         padding: 0;
         list-style-type: none;
 
-        & > li{
+        & > a{
             display: flex;
             flex-direction: row;
             font-size: 10pt;
+            text-decoration: none;
+            color: #000;
 
             &:not(:first-child){
                 margin-top: 10px;
