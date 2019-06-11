@@ -14,6 +14,8 @@ import ic_arduino from '../../assets/images/ic_arduino.png'
 import ic_blockchain from '../../assets/images/ic_blockchain.png'
 import ic_transaction from '../../assets/images/ic_transaction.png'
 
+import data from '../../assets/db/graph.json'
+
 import styles from './Main.scss';
 
 const cx = classNames.bind(styles)
@@ -26,7 +28,7 @@ class App extends Component {
         <div>
           <div>
             <div>
-              <Graph/>
+                <Graph data={data} />
             </div>
             <div>
               <List item={sensor} user="고태건" header="님의 센서 목록" img={ic_arduino} type="sensor" />

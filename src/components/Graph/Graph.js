@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Line } from 'react-chartjs-2';
 
-import data from '../../assets/db/graph.json'
 import './Graph.scss';
 
 const options = {
@@ -30,26 +29,23 @@ function datefunc(max, i, arr) {
     return datefunc(max, i + 1, arr);
 }
 
-function chartData() {
-    return {
-        labels: datefunc(6, 0, []),
-        datasets: data
-    }
-}
-
 class Graph extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: chartData()
+            data: {
+                labels: datefunc(6, 0, []),
+                datasets: this.props.data
+            }
         }
     }
     render() {
+        const { data } = this.state;
         return(
             <div className="Graph">
                 <h2><span>센서 그래프</span> Sensor Graph</h2>
                 <Line
-                    data={this.state.data}
+                    data={data}
                     options={options}
                     width={780}
                     height={250}

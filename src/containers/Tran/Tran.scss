@@ -1,10 +1,8 @@
 .Transaction{
-    padding-top: 80px;
-    height: calc(100vh - 80px);
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     & > h1{
         width: 78vw;
@@ -13,6 +11,68 @@
         & > span{
             font-size: 14pt;
             font-weight: 400;
+        }
+    }
+
+    & > div{
+        width: calc(78vw - 60px);
+        margin-top: 30px;
+        height: auto !important;
+        background-color: #fff;
+        padding: 20px 30px 10px 30px;
+        
+        &:nth-child(2){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & > div{
+                &:nth-child(1){
+                    width: 300px;
+                    height: 300px;
+                    margin-left: 50px;
+                    background-position: center;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+
+                &:nth-child(2){
+                    margin-left: 100px;
+
+                    & > div{
+                        margin-bottom: 30px;
+
+                        & > span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > table{
+            width: 100%;
+            border-spacing: 0px 10px;
+            & > thead{
+                & > tr{
+                    & > th{
+                        &:nth-child(1){
+                            width: 50%;
+                        }
+
+                        &:not(:first-child){
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+            & > tbody{
+                & > tr, a{
+                    & > td{
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }
