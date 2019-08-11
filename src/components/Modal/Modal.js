@@ -67,7 +67,7 @@ export default class Modals extends Component {
                         <span>TX HASH :</span> {data[id].transaction[modalInfo][0]}
                     </p>
                     <p>
-                        <span>Hash :</span> {data[id].info}
+                        <span>Timestamp :</span> {data[id].info}
                     </p>
                     <p>
                         <span>Last Transaction : </span> {data[id].transaction[0][0]}

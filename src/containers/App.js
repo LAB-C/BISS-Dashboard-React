@@ -8,6 +8,7 @@ import Node from './Node/Node'
 import Sensor from './Sensor/Sensor'
 import Device from './Device/Device'
 import Transaction from './Tran/Tran'
+import Firmware from './Firmware/Firmware'
 import Login from './Login/Login'
 
 import styles from './App.scss';
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path="/node=:id" exact component={Node} />
           <Route path="/device=:id" exact component={Device} />
           <Route path="/tran=:id" exact component={Transaction} />
+          <Route path="/firmware" exact component={Firmware} />
           <Route path="/login" exact component={Login}/>
         </Switch>
       </div>
